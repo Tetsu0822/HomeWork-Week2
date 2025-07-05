@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
 :root {
+    --neutral-0: #ffffff;
+    --neutral-100: #F8F9FA;
+    --neutral-300: #DEE2E6;
     --neutral-600: #6C757D;
     --neutral-900: #212529;
     --primary-200: #E8FEC5;
@@ -22,6 +25,16 @@ body {
     font-weight: 500;
     font-family: "Noto Sans TC", sans-serif;
     line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -54,6 +67,22 @@ h6 {
     line-height: 1.2;
 }
 
+.text-sm {
+    font-size: 14px;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.bg-white {
+    background-color: var(--neutral-0);
+}
+
 .container {
     max-width: 1296px;
     margin: 0 auto;
@@ -73,6 +102,8 @@ h6 {
 
 .col-4 {
     width: calc( 100% / 12 * 4);
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .col-5 {
@@ -106,7 +137,9 @@ h6 {
 .col-12 {
     width: 100%;
 }
-
+.ml-24 {
+    margin-left: 24px;
+}
 .ml-48 {
     margin-left: 48px;
 } 
@@ -116,11 +149,26 @@ h6 {
 .ml-auto {
     margin-left: auto;
 }
+.mb-4 {
+    margin-bottom: 4px;
+}
+.mb-12 {
+    margin-bottom: 12px;
+}
 .mb-16 {
     margin-bottom: 16px;
 }
 .mb-24 {
     margin-bottom: 24px;
+}
+.mb-32 {
+    margin-bottom: 32px;
+}
+.mb-48 {
+    margin-bottom: 48px;
+}
+.mb-64 {
+    margin-bottom: 64px;
 }
 .py-7 {
     padding-top: 7px;
@@ -129,6 +177,16 @@ h6 {
 .py-8 {
     padding-top: 8px;
     padding-bottom: 8px;
+}
+.py-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.gap-12 {
+    gap: 12px;
+}
+.gap-24 {
+    gap: 24px;
 }
 .nav-list {
     display: flex;
@@ -160,8 +218,9 @@ h6 {
     padding-bottom: 24px;
 }
 
-.breadcrumb-item {
+.breadcrumb-item a {
     color: var(--neutral-600);
+    text-decoration: none;
 }
 
 .active {
@@ -183,8 +242,8 @@ h6 {
 }
 
 .category-item a:hover {
-    color: var(--neutral-900);
-    text-decoration: none;
+    color: var(--neutral-600);
+
 }
 
 .category-item .all {
@@ -196,5 +255,68 @@ h6 {
     border-bottom: 1px solid var(--primary-500);
 }
 
+.d-flex {
+    display: flex;
+}
 
+.justify-between {
+    justify-content: space-between;
+}
 
+.justify-center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* 產品列表 */
+.product-title, .product-price {
+    color: var(--neutral-900);
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    background-color: var(--neutral-0);
+    border: none;
+}
+
+.btn-active {
+    background-color: var(--primary-300);
+}
+
+.btn-light {
+    background-color: var(--primary-200);
+    border: none;
+}
+
+.btn-dark {
+    background-color: var(--neutral-900);
+    border-radius: 4px;
+    color: var(--neutral-0);
+    padding: 12px 24px;
+}
+
+.section-called {
+    background-color: var(--primary-200);
+    padding: 24px 0;
+}
+
+.footer {
+    background-color: var(--neutral-100);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 32px;
+    border-top: 1px slid var(--neutral-300);
+}
+
+.copyright p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--neutral-600);
+    line-height: 1.5;
+}
