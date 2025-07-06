@@ -206,10 +206,20 @@ h6 {
     text-decoration: none;
 }
 
+.nav-list li a:hover {
+    color: var(--primary-500);
+    padding: 3px 0;
+    border-bottom: 1px solid var(--primary-500);
+}
+
+
 .nav-list .bi {
     font-size: 18px;
     color: var(--neutral-900);
-    padding: 15px;
+}
+
+.nav-list .bi:hover {
+    color: var(--neutral-500);
 }
 
 .breadcrumb {
@@ -221,6 +231,10 @@ h6 {
 .breadcrumb-item a {
     color: var(--neutral-600);
     text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--primary-500);
 }
 
 .active {
@@ -272,6 +286,11 @@ h6 {
 }
 
 /* 產品列表 */
+.product-item a:hover {
+    background-color: var(--neutral-900);
+    opacity: 0.7;
+}
+
 .product-title, .product-price {
     color: var(--neutral-900);
 }
@@ -283,7 +302,7 @@ h6 {
     border: none;
 }
 
-.btn-active {
+.btn-active, .btn:hover {
     background-color: var(--primary-300);
 }
 
@@ -292,10 +311,26 @@ h6 {
     border: none;
 }
 
+.btn-light:hover {
+    background-color: var(--neutral-0);
+    border: 1px solid var(--primary-500);
+    border-radius: 4px;
+    color: var(--primary-500);
+    
+}
+
 .btn-dark {
     background-color: var(--neutral-900);
     border-radius: 4px;
     color: var(--neutral-0);
+    padding: 12px 24px;
+}
+
+.btn-dark:hover {
+    font-weight: 900;
+    background-color: var(--neutral-0);
+    border-radius: 4px;
+    color: var(--neutral-900);
     padding: 12px 24px;
 }
 
