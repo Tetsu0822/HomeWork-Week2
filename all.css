@@ -542,3 +542,10 @@ h6 {
 .like-item a:hover {
     opacity: 0.7;
 }
+
+@media screen and (max-width: 768px) {
+    [class*="col"] {
+        width: 100%;
+    }
+    
+}
