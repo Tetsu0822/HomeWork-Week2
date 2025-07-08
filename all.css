@@ -408,14 +408,14 @@ h6 {
 }
 
 .btn {
-    /* width: 40px;
-    height: 40px; */
+    font-weight: 400;
     padding: 8px 15px;
     background-color: var(--neutral-0);
     border: none;
 }
 
 .btn-active, .btn:hover {
+    font-weight: 500;
     background-color: var(--primary-300);
 }
 
