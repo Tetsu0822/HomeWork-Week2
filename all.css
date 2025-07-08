@@ -354,6 +354,7 @@ h6 {
 .breadcrumb-link::before {
     content: '/';
     padding: 0 12px;
+    color: var(--neutral-300);
 }
 
 .active {
